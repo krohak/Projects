@@ -6,8 +6,8 @@ A repository containing some of the projects I've made over the past few years.
 Links-
 
 Kinect
-
 https://www.instagram.com/p/BJ2ibjVj62a/
+
 Line Follower Car
 https://www.instagram.com/p/2ocdYKlCXW/
 
