@@ -4,7 +4,7 @@
  * DTMF as input and four 7-Segment LED displays as output.
  * 
  * Wrote this sketch to learn coding and electronics, please
- * ignore the unnecessary convolution of code.
+ * pardon the unnecessary convolution of code.
  * 
  * @krohak
  *********************************/
