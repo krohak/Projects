@@ -29,7 +29,3 @@ Youtube:  https://www.youtube.com/watch?v=huZIT-BSQT0
 
 Facebook: https://www.facebook.com/sdhnt.gupta/videos/1774877712743181/
 
-
-<object width="420" height="315"
-data="https://www.youtube.com/watch?v=huZIT-BSQT0">
-</object>
