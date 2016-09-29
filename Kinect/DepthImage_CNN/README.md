@@ -19,12 +19,3 @@ sudo th neural_style.lua -style_image examples/inputs/starry_night.jpg -content_
 <img src="https://github.com/krohak/Projects/blob/master/Kinect/DepthImage_CNN/simple_depth_image/cnn.gif" width="400px">
 
 
-
-@misc{Johnson2015,
-  author = {Johnson, Justin},
-  title = {neural-style},
-  year = {2015},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/jcjohnson/neural-style}},
-}
