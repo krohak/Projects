@@ -31,7 +31,7 @@ Facebook: https://www.facebook.com/sdhnt.gupta/videos/1774877712743181/
 
 
 <video width="320" height="240" controls>
-  <source src= "https://www.youtube.com/watch?v=huZIT-BSQT0">
+  <source src= "https://www.youtube.com/watch?v=huZIT-BSQT0" type="video/mp4">
 </video>
 
 
