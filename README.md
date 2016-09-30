@@ -21,9 +21,9 @@ Custom Batman Logo programmed on Arduino Uno. It creates custom characters using
 
 Line-Following Car built for competing in a competition organized by The Hong Kong Institute of Engineers, called 'Ambitions'. The Car uses two infrared sensors at the front to detect the line and two servo motors attached to a motor controller board for autonomous control.
 
-## [Rube_Goldberg](https://github.com/krohak/Projects/blob/master/Arduino/Rube_Goldberg/Rube_Goldberg.ino)
+### [Rube_Goldberg](https://github.com/krohak/Projects/blob/master/Arduino/Rube_Goldberg/Rube_Goldberg.ino)
 
-[Video](https://www.youtube.com/watch?v=huZIT-BSQT0)
+**[Video](https://www.youtube.com/watch?v=huZIT-BSQT0)**
 
 [![rube](http://img.youtube.com/vi/huZIT-BSQT0/0.jpg)](https://www.youtube.com/watch?v=huZIT-BSQT0)
 
