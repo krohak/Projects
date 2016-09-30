@@ -65,3 +65,10 @@ Processing code for a simple application which detects the closest object in fro
 
 
 ### [Rpi-Arduino](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Arduino)
+
+### [Python](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Python)
+
+### [SimpleCV](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/SimpleCV)
+
+### [Twython](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Twython)
+
