@@ -33,20 +33,27 @@ Line-Following Car built for competing in a competition organized by The Hong Ko
 
 The code for a Rube Goldberg machine built for the final project of my Intro to Electrical and Electronics Engineering course at The University of Hong Kong.
 
-Kinect
-https://www.instagram.com/p/BJ2ibjVj62a/
+### [Snake](https://github.com/krohak/Projects/blob/master/Arduino/Snake/Snake.ino)
 
-Snake
-https://www.instagram.com/p/39gnu1FCfa/
+**[Video](https://www.instagram.com/p/39gnu1FCfa/)**
 
-Pong
-https://www.instagram.com/p/3gSbgblCcf/
+Arduino version of the classic game Snake.
 
+### [Pong](https://github.com/krohak/Projects/blob/master/Arduino/Snake/Snake.ino)
 
+**[Video](https://www.instagram.com/p/3gSbgblCcf/)**
 
-
-CNN
-https://github.com/jcjohnson/neural-style
+Arduino version of the classic game 'Pong' using 16x2 LCD. Input from DTMF, a small buzzer in use for random 8-bit sound effects.
 
 
+## Kinect
+
+
+### [DepthImage_CNN](https://github.com/krohak/Projects/tree/master/Kinect/DepthImage_CNN)
+
+**[Video](https://www.instagram.com/p/BJ2ibjVj62a/)**
+
+[<img src="https://github.com/krohak/Projects/blob/master/Kinect/DepthImage_CNN/simple_depth_image/cnn.gif" width="400px">](https://www.instagram.com/p/BJ2ibjVj62a/)
+
+This is an experiment which combines the Depth Image captured from a Kinect Sensor with a Convolutional Neural Network, made for the purpose of recreating artistic styles of paintings.
 
