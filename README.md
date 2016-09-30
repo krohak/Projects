@@ -11,13 +11,17 @@ A very basic Arduino sketch for a Calculator using DTMF as input and four 7-Segm
 
 ### [Batsignal](https://github.com/krohak/Projects/blob/master/Arduino/Batsignal/Batsignal.ino)
 
-<img src="https://pbs.twimg.com/profile_banners/3312354553/1439293197" width="400px">
+**[Video](https://www.youtube.com/watch?v=WW_cGdG26EU)**
+
+[<img src="https://pbs.twimg.com/profile_banners/3312354553/1439293197" width="400px">](https://www.youtube.com/watch?v=WW_cGdG26EU)
 
 Custom Batman Logo programmed on Arduino Uno. It creates custom characters using 8 byte arrays to display the design on the 20x4 LCD screen.
 
 ### [HKIE_Linus](https://github.com/krohak/Projects/blob/master/Arduino/HKIE_Linus/HKIE_Linus.ino)
 
-<img src="https://raw.githubusercontent.com/krohak/Projects/master/Arduino/HKIE_Linus/hkie.jpg" width="400px">
+**[Video](https://www.instagram.com/p/2ocdYKlCXW/)**
+
+[<img src="https://raw.githubusercontent.com/krohak/Projects/master/Arduino/HKIE_Linus/hkie.jpg" width="400px">](https://www.instagram.com/p/2ocdYKlCXW/)
 
 Line-Following Car built for competing in a competition organized by The Hong Kong Institute of Engineers, called 'Ambitions'. The Car uses two infrared sensors at the front to detect the line and two servo motors attached to a motor controller board for autonomous control.
 
@@ -31,9 +35,6 @@ The code for a Rube Goldberg machine built for the final project of my Intro to 
 
 Kinect
 https://www.instagram.com/p/BJ2ibjVj62a/
-
-Line Follower Car
-https://www.instagram.com/p/2ocdYKlCXW/
 
 Snake
 https://www.instagram.com/p/39gnu1FCfa/
