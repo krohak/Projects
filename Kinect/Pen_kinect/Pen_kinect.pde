@@ -4,8 +4,8 @@
 * object in front of the Kinect Sensor and tracks the object, thus drawing 
 * a line on screen. The closer the object is, the thicker the line would be.
 *
-* Modified version of the code taken from the book 'Making Things See' by 
-* Greg Boreinstein. Works on Processing v2.2.1 
+* Extended version of the code fromm 'Making Things See' by Greg Boreinstein. 
+* Works on Processing v2.2.1 
 *
 *@krohak
 ***********************************/
