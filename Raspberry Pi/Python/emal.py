@@ -1,6 +1,6 @@
 import smtplib
-GMAIL_USER = 'rohaksinghal14@gmail.com'
-GMAIL_PASS = 'dunlop691'
+GMAIL_USER = 'your_email'
+GMAIL_PASS = 'your_pass'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
