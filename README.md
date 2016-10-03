@@ -1,6 +1,6 @@
 # Projects
 
-A repository containing some of the code I've written/experimented with over the past few years.
+**A repository containing some of the code I've written/experimented with over the past few years.**
 
 ## Arduino
 
