@@ -3,7 +3,7 @@ This is an experiment which combines the Depth Image captured from a Kinect Sens
 
 ## Processing
 The folder contains a [Processing code](https://github.com/krohak/Projects/blob/master/Kinect/DepthImage_CNN/simple_depth_image/simple_depth_image.pde) for displaying the Depth Image and RGB Image from the Kinect sensor. 
-Modified version of the code taken from the book [Making Things See](http://makingthingssee.com/) by  [Greg Boreinstein](http://gregborenstein.com/). Works on [Processing v2.2.1](https://processing.org/download/?processing). 
+Works on [Processing v2.2.1](https://processing.org/download/?processing). Utilizes the SimpleOpenNI Processing library and [OpenNI software (OpenNI, NITE, and SensorKinect) on Linux](https://code.google.com/archive/p/simple-openni/wikis/Installation.wiki#Linux).
 
 ### Output
 <img src="https://raw.githubusercontent.com/krohak/Projects/master/Kinect/DepthImage_CNN/simple_depth_image/Capture.PNG" width="400px">
