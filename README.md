@@ -10,7 +10,7 @@ A repository containing some of the code I've written/experimented with over the
 
 [<img src="https://raw.githubusercontent.com/krohak/Projects/master/Arduino/HKIE_Linus/hkie.jpg" width="400px">](https://www.instagram.com/p/2ocdYKlCXW/)
 
-Line-Following Car built for the finals of 'Ambitions', a competition organized by The Hong Kong Institute of Engineers. The Car uses two infrared sensors at the front to detect the line and two servo motors attached to a motor controller board for autonomous control.
+Line-Following Car built for the finals of 'Ambitions', a competition organized by The Hong Kong Institute of Engineers. The Car, Linus, uses two infrared sensors at the front to detect the line and two servo motors attached to a motor controller board for autonomous control. Linus made a place for itself amongst the finalists.
 
 ### [Rube_Goldberg](https://github.com/krohak/Projects/blob/master/Arduino/Rube_Goldberg/Rube_Goldberg.ino)
 
@@ -66,9 +66,17 @@ Processing code for a simple application which detects the closest object in fro
 
 ### [Rpi-Arduino](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Arduino)
 
+For communication between Arduino and Rpi.
+
 ### [Python](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Python)
+
+Various misc. Python programs on Rpi.
 
 ### [SimpleCV](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/SimpleCV)
 
+SimpleCV is a Python library for Image Processing. This folder contains code which utilize it to manipulate images and for motion sensing.
+
 ### [Twython](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Twython)
+
+Python library for Twitter API. Folder contains code for Twitter keyword search and update.
 
