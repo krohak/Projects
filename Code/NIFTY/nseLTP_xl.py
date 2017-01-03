@@ -2,7 +2,13 @@ from bs4 import BeautifulSoup
 from httplib2 import Http
 import re
 from time import strftime
-from openpyxl import load_workbook
+from openpyxl import Workbook,load_workbook
+from openpyxl.chart import (
+    LineChart,
+    Reference,
+)
+from openpyxl.chart.axis import DateAxis
+
 
 date = strftime("%d-%b-%Y")
 
@@ -41,7 +47,7 @@ def find_LTP(x, y,section):
 			return tds[0]
 
 """
-function to open an excel sheet, get the strike prices and expiry dates
+Open an excel sheet, get the strike prices and expiry dates
 from it, retireve LTPs from nseindia.com and store them in the same sheet
 """
 def xl_read_write(xl,cp):
@@ -51,20 +57,76 @@ def xl_read_write(xl,cp):
 
 	x=2
 	y = wb.max_column +1
-
-	while wb.cell(row=x,column=1).value != None:
-
+	spgraph = []
+	data = []
+	spgraph.append('Strike Price')
+	while wb.cell(row=x,column=2).value != None:
 		(section,nifty) = find_site((wb.cell(row=x,column=3).value))	#expiry dates
+		spgraph.append((wb.cell(row=x,column=2).value))
 		ltp = find_LTP(str(wb.cell(row=x,column=2).value),cp,section)
-
 		if ltp != None:
 			wb.cell(row=x,column=y).value = float(ltp.replace(",",""))
-
 		x+=1
-
 	wb.cell(row=1,column=y).value = (date + ", " + nifty)
-	source.save(xl)
 
-xl_read_write('CALL.xlsx','CE')
-xl_read_write('PUT.xlsx','PE')
+	data.append(spgraph)
+
+	for col in wb.iter_cols(min_row=1, min_col = 5, max_col=wb.max_column, max_row=wb.max_row-1):
+		sp1 = []
+		for cell in col:
+			#print(cell.value)
+			sp1.append(cell.value)
+
+		data.append(sp1)
+
+	print(wb.max_row)
+	print(wb.max_column)
+	source.save(xl)
+	return data
+
+"""
+Plot date vs. LTP for all strike prices in an excel sheet
+"""
+
+def plot_graph(rows,name):
+
+    wb = Workbook()
+    ws = wb.active
+    for row in rows:
+        ws.append(row)
+
+    c2 = LineChart()
+    c2.title = "LTP growth"
+    c2.style = 7           #7,8,9
+    c2.y_axis.title = "LTP"
+    c2.y_axis.crossAx = 500
+    c2.x_axis = DateAxis(crossAx=100)
+    c2.x_axis.number_format = 'd-mmm'
+    c2.x_axis.majorTimeUnit = "days"
+    c2.x_axis.title = "Date"
+
+    data = Reference(ws, min_col=2, min_row=1, max_col=ws.max_column, max_row=ws.max_row)
+    c2.add_data(data, titles_from_data=True)
+    dates = Reference(ws, min_col=1, min_row=2, max_row=ws.max_row)
+    c2.set_categories(dates)
+
+
+    x =0
+
+    while x != ws.max_column-1:
+        s2 = c2.series[x]
+        s2.graphicalProperties.line.dashStyle = "sysDot"
+        s2.smooth = True # Make the line smooth
+        x += 1
+
+
+
+    ws.add_chart(c2, "K10")
+    wb.save(name)
+
+
+data = xl_read_write('CALL.xlsx','CE')
+plot_graph(data,"CALLchart.xlsx")
+data = xl_read_write('PUT.xlsx','PE')
+plot_graph(data,"PUTchart.xlsx")
 input("Data Saved for "+ date+ ".\nPress Enter to continue. ")
