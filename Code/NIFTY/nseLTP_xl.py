@@ -96,6 +96,8 @@ def plot_graph(rows,name):
         ws.append(row)
 
     c2 = LineChart()
+    c2.height = 12
+    c2.width = 25
     c2.title = "LTP growth"
     c2.style = 7           #7,8,9
     c2.y_axis.title = "LTP"
@@ -121,7 +123,7 @@ def plot_graph(rows,name):
 
 
 
-    ws.add_chart(c2, "K10")
+    ws.add_chart(c2, "A1")
     wb.save(name)
 
 
