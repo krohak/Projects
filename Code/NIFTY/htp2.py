@@ -3,10 +3,11 @@ from httplib2 import Http
 import re
 from time import strftime
 import csv
+from openpyxl import load_workbook
 
 date = strftime("%d-%b-%Y")
 
-#expiry = "30MAR2017"
+expiry = "23FEB2017"
 
 def find_site(expiry):
 
@@ -16,6 +17,7 @@ def find_site(expiry):
 	try:
 		nifty = soup.find('b',string=re.compile("NIFTY"))
 		nifty = nifty.text
+		print(nifty)
 
 		section = soup.find('table', id = 'octable')	#find data table
 		return section,nifty
@@ -48,16 +50,17 @@ from it, retireve LTPs from nseindia.com and store them in the same file
 """
 
 def CSV_read_write(csvin,c):
-
+	"""
 	with open(csvin, 'r') as csvfile:
 
 		reader = csv.DictReader(csvfile)
 		ltp= []
 		for row in reader:
 			#read rows and append ltp
-			#print(row["Strike Price"])
+			print(row["Strike Price"])
 			#print(row["Expiry"])
-			(section,nifty) = find_site(row["Expiry"])							#call nifty once
+			#(section,nifty) = find_site(row["Expiry"])
+			(section,nifty) = find_site(expiry)					#call nifty once
 			ltp.append(find_LTP(row["Strike Price"],c,section))
 
 
@@ -83,8 +86,43 @@ def CSV_read_write(csvin,c):
 
 		writer = csv.writer(csvoutput)
 		writer.writerows(all)
+		"""
+def xl_read_write(xl,cp):
 
+	source = load_workbook(xl)
+	wb = source.active
+	"""
+	wb['A1'] = 4
+	source.save(file)
+	"""
+	#"""
 
-CSV_read_write("CE.csv","CE")
-CSV_read_write("PE.csv","PE")
-input("Data Saved for "+ date+ ".\nPress Enter to continue. ")
+	x=2
+	y = wb.max_column +1
+
+	while wb.cell(row=x,column=1).value != None:
+		#print(wb.cell(row=x,column=2).value)
+		#print(wb.cell(row=x,column=3).value)
+		(section,nifty) = find_site((wb.cell(row=x,column=3).value))	#expiry dates
+		ltp = find_LTP(str(wb.cell(row=x,column=2).value),cp,section)
+		print(ltp)
+		if ltp != None:
+			wb.cell(row=x,column=y).value = float(ltp.replace(",",""))
+
+		x+=1
+	#"""
+	"""
+	"""
+	wb.cell(row=1,column=y).value = (date + ", " + nifty)
+	#print(wb.max_row)
+	#print(wb.max_column)
+	source.save(xl)
+
+xl_read_write('CALL.xlsx','CE')
+xl_read_write('PUT.xlsx','PE')
+
+#CSV_read_write("CE.csv","CE")
+#CSV_read_write("PE.csv","PE")
+#(section,nifty) = find_site(expiry)
+#print(find_LTP('8100',"CE",section))
+#input("Data Saved for "+ date+ ".\nPress Enter to continue. ")
