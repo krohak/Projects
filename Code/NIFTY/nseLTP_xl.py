@@ -12,7 +12,7 @@ from openpyxl.chart.axis import DateAxis
 
 date = strftime("%d-%b-%Y")
 
-expiry = "23FEB2017"
+#expiry = "23FEB2017"
 
 def find_site(expiry):
 
@@ -118,7 +118,7 @@ def plot_graph(rows,name):
     while x != ws.max_column-1:
         s2 = c2.series[x]
         s2.graphicalProperties.line.dashStyle = "sysDot"
-        s2.smooth = True # Make the line smooth
+        #s2.smooth = True # Make the line smooth
         x += 1
 
 
