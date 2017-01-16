@@ -1,5 +1,5 @@
 from selenium import webdriver
-import sys
+import sys,time
 
 browser = webdriver.Chrome('/home/rohak/Projects/Code/HKU/chromedriver')
 
@@ -41,6 +41,7 @@ for i in q:
 
 z.click()
 
+time.sleep(1)
 browser.save_screenshot('/home/rohak/Projects/Code/HKU/screenshot.png')
 browser.quit()
 
