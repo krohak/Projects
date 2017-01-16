@@ -31,11 +31,21 @@ for i in q:
     if i.text == 'Proceed To Step 2 Of 3':
     #if i.text == 'search':
         z=i
+z.click()
+
+
+q = browser.find_elements_by_tag_name('a')
+for i in q:
+    if i.text == 'Finish Enrolling':
+        z=i
 
 z.click()
 
-browser.save_screenshot('screenshot.png')
+browser.save_screenshot('/home/rohak/Projects/Code/HKU/screenshot.png')
 browser.quit()
+
+
+
 
 
 #sub.submit()
