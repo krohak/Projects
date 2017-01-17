@@ -1,6 +1,6 @@
 # Projects
 
-**A repository containing some of the code I've written/experimented with over the past few years.**
+**A repository of some of the code I've experimented with/written for projects including, but not limited to, Arduino, Raspberry Pi, Kinect etc.**
 
 ## Arduino
 
@@ -60,7 +60,7 @@ A web scraping program to plot the growth of [LTP](http://budgeting.thenest.com/
 
 It takes data (Strike Price and its Expiry) from two Excel sheets ([CALL.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/CALL.xlsx) and [PUT.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/PUT.xlsx)), finds the corresponding [table](https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?symbolCode=-10003&symbol=NIFTY&symbol=NIFTY&instrument=-&date=-&segmentLink=17&symbolCount=2&segmentLink=17) on the website and appends the multiple LTPs and the present day's NIFTY value in those excel sheets. Lastly, it outputs two graphs inside [CALLchart.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/CALLchart.xlsx) and [PUTchart.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/PUTchart.xlsx) which outlines the growth of LTPs of the various Strike Prices over time. 
 
-Uses [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) and [Openpyxl](https://openpyxl.readthedocs.io/en/default/)
+Uses [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) and [Openpyxl](https://openpyxl.readthedocs.io/en/default/).
 
 
 ## Kinect
