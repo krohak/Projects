@@ -4,6 +4,8 @@
 
 A script for [lazy] students from HKU to enroll in the pre-selected courses (from the temporary course list) during the add/drop period. Since I didn't have access to the internet during the latest add/drop period, I wrote this code and scheduled it to run on a server.
 
+Takes 'HKU Portal UID' and 'Password' as the command line arguments.
+
 ## NIFTY
 
 A web scraping program to plot the growth of [LTP](http://budgeting.thenest.com/ltp-stock-market-26186.html) (Last Trade Price) over time for given [Strike Prices](http://www.investopedia.com/terms/s/strikeprice.asp) of [NIFTY](https://en.wikipedia.org/wiki/NIFTY_50) on The National Stock Exchange of India's [website](https://www.nseindia.com/).
