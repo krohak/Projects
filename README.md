@@ -22,7 +22,7 @@ The code for a Rube Goldberg machine built for the final project of my Intro to 
 
 ### [Ard_Calculator](https://github.com/krohak/Projects/blob/master/Arduino/Ard_Calculator/Ard_Calculator.ino)
 
-A very basic Arduino sketch for a Calculator using DTMF as input and four 7-Segment LED displays as output. 
+A very basic Arduino sketch for a Calculator using DTMF as input and four 7-Segment LED displays as output.
 
 ### [Batsignal](https://github.com/krohak/Projects/blob/master/Arduino/Batsignal/Batsignal.ino)
 
@@ -48,9 +48,13 @@ Arduino version of the classic game 'Pong' using 16x2 LCD. Input from DTMF, a sm
 ## Code
 
 
-### HKU
+### [HKU](https://github.com/krohak/Projects/blob/master/Code/HKU/hku.py)
 
-### NIFTY
+A script for [lazy] students from HKU to enroll in the pre-selected courses (from the temporary course list) during the add/drop period. Since I didn't have access to internet during the latest add/drop period, I wrote this code and scheduled it to run on a server. 
+
+### [NIFTY](https://github.com/krohak/Projects/blob/master/Code/NIFTY/nseLTP_xl.py)
+
+
 
 
 ## Kinect
@@ -87,4 +91,3 @@ SimpleCV is a Python library for Image Processing. This folder contains code whi
 ### [Twython](https://github.com/krohak/Projects/tree/master/Raspberry%20Pi/Twython)
 
 Python library for Twitter API. Folder contains code for Twitter keyword search and update.
-

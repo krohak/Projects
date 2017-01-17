@@ -1,3 +1,12 @@
+'''
+Takes 'HKU Portal UID' and 'Password' as the command line arguments.
+
+A script for [lazy] students from HKU to enroll in the pre-selected courses (from the temporary course list) during
+the add/drop period. Since I didn't have access to internet during the latest add/drop period, I wrote this code and
+scheduled it to run on a server. 
+
+@krohak
+'''
 from selenium import webdriver
 import sys,time
 
