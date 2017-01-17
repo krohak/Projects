@@ -50,11 +50,11 @@ Arduino version of the classic game 'Pong' using 16x2 LCD. Input from DTMF, a sm
 
 ### [HKU](https://github.com/krohak/Projects/blob/master/Code/HKU/hku.py)
 
-A script for [lazy] students from HKU to enroll in the pre-selected courses (from the temporary course list) during the add/drop period. Since I didn't have access to internet during the latest add/drop period, I wrote this code and scheduled it to run on a server. 
+A script for [lazy] students from HKU to enroll in the pre-selected courses (from the temporary course list) during the add/drop period. Since I didn't have access to internet during the latest add/drop period, I wrote this code and scheduled it to run on a server.
 
 ### [NIFTY](https://github.com/krohak/Projects/blob/master/Code/NIFTY/nseLTP_xl.py)
 
-
+A web scraping program to extract data from The [National Stock Exchange of India (NSE)'s website](https://www.nseindia.com/). It takes data ([Strike Price](http://www.investopedia.com/terms/s/strikeprice.asp) and its Expiry) from two Excel sheets ([CALL.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/CALL.xlsx) and [PUT.xlsx](https://github.com/krohak/Projects/blob/master/Code/NIFTY/PUT.xlsx)).
 
 
 ## Kinect
