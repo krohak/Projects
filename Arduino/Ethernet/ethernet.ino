@@ -1,21 +1,3 @@
-/*--------------------------------------------------------------
-  Program:      webserver_3_LED
-
-  Description:  Arduino web server that serves up a web page
-                allowing the user to control three LEDs
-
-  Ethernet shield attached to pins 10, 11, 12, 13
-
-Circuit:
-------------------------------------------------------
-
- pin 2 ----- LED long leg/LED short leg ----- GND
- pin 3 ----- LED long leg/LED short leg ----- GND
- pin 4 ----- LED long leg/LED short leg ----- GND
- etc
-------------------------------------------------------
-*/
-
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -62,6 +44,7 @@ void loop()
 digitalWrite (14, 1);
 
   EthernetClient client = server.available();
+  delay(700);
 
   if (client) {
     while (client.connected()) {
@@ -82,15 +65,18 @@ digitalWrite (14, 1);
           client.println("<html><head>");
           client.println("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
           client.println("<style> div{margin:20px; border: 2px solid black; padding:20px;}input{font-size:1.2em;}</style>");
-          client.println("</head><body>");
+          client.println("</head><body style=\"margin: 0px;\">");
+          //client.println("<img src=\"https://unsplash.it/1920/1080/?random\" width=\"893\" height=\"502\">");
+          client.println("<img style=\"user-select: none; cursor: zoom-in;\" src=\"https://unsplash.it/1920/1080/?random\" width=\"893\" height=\"502\">");
 
           //
           //CheckLEDs();              // get state of LED checkboxes from web page
-          UpdateLEDs();
-          DisplayLEDs(&client);     // display checkboxes on web & write to LEDs
+          //UpdateLEDs();
+          //DisplayLEDs(&client);     // display checkboxes on web & write to LEDs
           //
-
-          client.println("</body></html>");
+          client.println("</body>");
+          //client.println("<script>location.reload(1);</script>");
+          client.println("</html>");
           HTTP_req = "";      // delete string contents
           client.stop();
         } // end if (char_in == '\n')
@@ -234,8 +220,6 @@ void DisplayLEDs(Client *client)
       //digitalWrite(LED_pins[led_num], HIGH);  // switch LED on
 
       //print_1 ();
-
-      printt (led_num);
 
       delay (1000);
       //

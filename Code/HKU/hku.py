@@ -16,11 +16,13 @@ browser = webdriver.Chrome('/home/rohak/Projects/Code/HKU/chromedriver')
 browser.get('https://hkuportal.hku.hk/login.html')
 
 emailElem = browser.find_element_by_id('username')
-username = sys.argv[1]
+username = input()
+#sys.argv[1]
 emailElem.send_keys(username)
 
 passwordElem = browser.find_element_by_id('password')
-password = sys.argv[2]
+password = input()
+#sys.argv[2]
 passwordElem.send_keys(password)
 
 passwordElem.submit()
